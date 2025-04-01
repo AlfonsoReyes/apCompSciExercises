@@ -91,7 +91,6 @@ class GridPath():
 STUFF BELOW IS UNIT TEST TO VERIFY FUNCTIONALITY OF CODE UNDER DIFFERENT SCENARIOS
 """
 
-
 import unittest
 
 class TestGridPath(unittest.TestCase):
@@ -108,11 +107,6 @@ class TestGridPath(unittest.TestCase):
             [18, 22, 30, 25, 6]
         ]
         
-        # for x in range(5):
-        #     for i in range(5):
-
-        #         grid[x][i] = stuff[x][i]
-
         gp = GridPath(grid)
 
         loc = gp.getNextLoc(0, 0)
@@ -132,11 +126,6 @@ class TestGridPath(unittest.TestCase):
             [10, 17, 20, 19, 1],
             [18, 22, 30, 25, 6]
         ]
-        
-        # for x in range(5):
-        #     for i in range(5):
-
-        #         grid[x][i] = stuff[x][i]
 
         gp = GridPath(grid)
 
@@ -184,22 +173,3 @@ class TestGridPath(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-# grid = [
-#     [12, 3, 4, 13, 5],
-#     [11, 21, 2, 14, 16],
-#     [7, 8, 9, 15, 0],
-#     [10, 17, 20, 19, 1],
-#     [18, 22, 30, 25, 6]
-# ]
-
-# for x in range(5):
-
-#     lineStr = ""
-
-#     for y in range(5):
-
-#         lineStr += str(grid[x][y]) + " "
-
-#     print(lineStr)
