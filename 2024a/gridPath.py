@@ -14,6 +14,8 @@ receive full credit.
 4. This question involves a path through a two-dimensional (2D) array of integers, where the path is based on the
     values of elements in the array. 
     
+    The grid starts from the top left at (0, 0)
+
     When an element of the 2D array is accessed, the first index is used to specify
     the row and the second index is used to specify the column. 
     
@@ -94,4 +96,110 @@ import unittest
 
 class TestGridPath(unittest.TestCase):
 
-    pass
+    def testGetNextLocOne(self):
+
+        #grid = [[]]
+
+        grid = [
+            [12, 3, 4, 13, 5],
+            [11, 21, 2, 14, 16],
+            [7, 8, 9, 15, 0],
+            [10, 17, 20, 19, 1],
+            [18, 22, 30, 25, 6]
+        ]
+        
+        # for x in range(5):
+        #     for i in range(5):
+
+        #         grid[x][i] = stuff[x][i]
+
+        gp = GridPath(grid)
+
+        loc = gp.getNextLoc(0, 0)
+
+        locCoords = (loc.getRow(), loc.getCol())
+
+        self.assertEqual(locCoords, (0, 1), "Incorrect location.")
+
+    def testGetNextLocTwo(self):
+
+        #grid = [[]]
+
+        grid = [
+            [12, 3, 4, 13, 5],
+            [11, 21, 2, 14, 16],
+            [7, 8, 9, 15, 0],
+            [10, 17, 20, 19, 1],
+            [18, 22, 30, 25, 6]
+        ]
+        
+        # for x in range(5):
+        #     for i in range(5):
+
+        #         grid[x][i] = stuff[x][i]
+
+        gp = GridPath(grid)
+
+        loc = gp.getNextLoc(2, 4)
+
+        locCoords = (loc.getRow(), loc.getCol())
+
+        self.assertEqual(locCoords, (3, 4), "Incorrect location.")
+
+    def testGetNextLocThree(self):
+
+        grid = [
+            [12, 3, 4, 13, 5],
+            [11, 21, 2, 14, 16],
+            [7, 8, 9, 15, 0],
+            [10, 17, 20, 19, 1],
+            [18, 22, 30, 25, 6]
+        ]
+
+        gp = GridPath(grid)
+
+        loc = gp.getNextLoc(1, 3)
+
+        locCoords = (loc.getRow(), loc.getCol())
+
+        self.assertEqual(locCoords, (2, 3), "Incorrect location.")
+
+    def testGetNextLocFour(self):
+
+        grid = [
+            [12, 3, 4, 13, 5],
+            [11, 21, 2, 14, 16],
+            [7, 8, 9, 15, 0],
+            [10, 17, 20, 19, 1],
+            [18, 22, 30, 25, 6]
+        ]
+
+        gp = GridPath(grid)
+
+        loc = gp.getNextLoc(4, 3)
+
+        locCoords = (loc.getRow(), loc.getCol())
+
+        self.assertEqual(locCoords, (4, 4), "Incorrect location.")
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+# grid = [
+#     [12, 3, 4, 13, 5],
+#     [11, 21, 2, 14, 16],
+#     [7, 8, 9, 15, 0],
+#     [10, 17, 20, 19, 1],
+#     [18, 22, 30, 25, 6]
+# ]
+
+# for x in range(5):
+
+#     lineStr = ""
+
+#     for y in range(5):
+
+#         lineStr += str(grid[x][y]) + " "
+
+#     print(lineStr)

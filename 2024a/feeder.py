@@ -1,8 +1,8 @@
 """"
 Source:
     https://apcentral.collegeboard.org/media/pdf/ap24-frq-comp-sci-a.pdf
-•
- Assume that built-in Python libraries (like random, math, os, etc.) have been imported where appropriate.
+    
+•Assume that built-in Python libraries (like random, math, os, etc.) have been imported where appropriate.
 • Unless otherwise noted in the question, assume that parameters in method calls are not null and that methods
 are called only when their preconditions are satisfied.
 • In writing solutions for each question, you may use any of the accessible methods that are listed in classes defined

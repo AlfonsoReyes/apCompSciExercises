@@ -1,4 +1,16 @@
 """
+Source:
+    https://apcentral.collegeboard.org/media/pdf/ap24-frq-comp-sci-a.pdf
+
+• Assume that built-in Python libraries (like random, math, os, etc.) have been imported where appropriate.
+• Unless otherwise noted in the question, assume that parameters in method calls are not null and that methods
+are called only when their preconditions are satisfied.
+• In writing solutions for each question, you may use any of the accessible methods that are listed in classes defined
+in that question. Writing significant amounts of code that can be replaced by a call to one of these methods will not
+receive full credit.
+"""
+
+"""
 3. This question involves the manipulation and analysis of a list of words. The following WordChecker
     class contains a list of strings (list[str]) to be analyzed and methods that are used to perform the
     analysis. You will write two methods of the WordChecker class.
