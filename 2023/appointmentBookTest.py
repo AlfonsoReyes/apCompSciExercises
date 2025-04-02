@@ -1,3 +1,9 @@
+"""
+***DO NOT ALTER ANY CODE BELOW***
+
+CODE BELOW IS FOR UNIT TESTING FUNCTIONALITY OF AppointmentBook CLASS UNDER DIFFERENT SCENARIOS
+"""
+
 from appointmentBook import AppointmentBook
 import random
 import math
@@ -219,6 +225,5 @@ def buildAppointmentBook():
 
 
 if __name__ == '__main__':
-    #unittest.main()
-    buildAppointmentBook()
+    unittest.main()
 
